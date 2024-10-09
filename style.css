@@ -1,2 +1,23 @@
-.heading{
+..button {
+  background-color: #fdd835; /* Bright yellow color */
+  color: #fff; /* White text */
+  padding: 12px 24px; /* Adds space inside the button */
+  border: none; /* No border */
+  border-radius: 8px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  font-weight: bold; /* Bold text */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.button:hover {
+  background-color: #fbc02d; /* Slightly darker yellow on hover */
+  transform: translateY(-2px); /* Moves the button up slightly on hover */
+}
+
+.button:active {
+  background-color: #f9a825; /* Darker yellow when clicked */
+  transform: translateY(1px); /* Moves the button down slightly when clicked */
+}
   
