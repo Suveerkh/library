@@ -58,25 +58,14 @@ body {
 }
 
 .book-details {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: #fff;
-  opacity: 0; /* Initially hidden */
+  position: relative; /* No need for absolute positioning */
+  background-color: #fff; /* Change background color to match book card */
+  color: #333; /* Dark text color for readability */
+  opacity: 1; /* Make it always visible */
   padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transition: opacity 0.3s; /* Smooth transition for hover */
+  display: block;
   text-align: center;
-}
-
-.book:hover .book-details {
-  opacity: 1; /* Become visible on hover */
+  border-top: 2px solid #fdd835; /* Optional to match the design */
 }
 .book-series {
   font-style: italic; /* Adds a bit of emphasis to the series info */
