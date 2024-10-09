@@ -65,18 +65,18 @@ body {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.8);
   color: #fff;
-  opacity: 0;
+  opacity: 0; /* Initially hidden */
   padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: opacity 0.3s;
+  transition: opacity 0.3s; /* Smooth transition for hover */
   text-align: center;
 }
 
 .book:hover .book-details {
-  opacity: 1;
+  opacity: 1; /* Become visible on hover */
 }
 .book-series {
   font-style: italic; /* Adds a bit of emphasis to the series info */
