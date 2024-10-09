@@ -20,4 +20,85 @@
   background-color: #f9a825; /* Darker yellow when clicked */
   transform: translateY(1px); /* Moves the button down slightly when clicked */
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+.library {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.book {
+  position: relative;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.book:hover {
+  transform: translateY(-10px);
+}
+
+.book-cover {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #fdd835;
+}
+
+.book-info {
+  padding: 16px;
+  text-align: center;
+}
+
+.book-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.book-author {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 4px;
+}
+
+.book-genre {
+  font-size: 12px;
+  color: #999;
+}
+
+.book-details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  opacity: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s;
+  text-align: center;
+}
+
+.book:hover .book-details {
+  opacity: 1;
+}
   
