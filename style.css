@@ -75,7 +75,7 @@ body {
   margin-bottom: 4px;
 }
 
-.book-genre {
+.book-genre, .book-series {
   font-size: 12px;
   color: #999;
 }
@@ -100,5 +100,8 @@ body {
 
 .book:hover .book-details {
   opacity: 1;
+}
+.book-series {
+  font-style: italic; /* Adds a bit of emphasis to the series info */
 }
   
