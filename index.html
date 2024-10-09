@@ -11,13 +11,13 @@
     function printScreen() {
       window.print();  // This method will trigger the browser's print dialog
     }
-    function showWarning() {
+    window.onload=function () {
       alert("This is Suveer's Library!");
     }
   </script>
     <center>
     <h1>LIBRARY</h1>
-    <button class="print-button" onclick="printScreen()">Print this page</button>
+    <button class="print-button" onclick="window()">Print this page</button>
     </center>
     <div class="library">
       <img src="lightning_thief_cover.jpeg" alt="The lightning Thief " class="book-cover">
